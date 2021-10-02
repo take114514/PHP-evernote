@@ -11,3 +11,15 @@ function emptyCheck(&$errors, $check_value, $message){
         array_push($errors, $message);
     }
 }
+/** 
+ * 最小文字数チェック
+ * @param $errors
+ * @param $check_value
+ * @param $message
+ * @param int $min_size
+ */ 
+function stringMinSizeCheck(&$errors, $check_value, $message, $min_size = 8){
+    if (mb_strlen($check_value) < $min_size) {
+        array_push($errors, $message);
+    }
+}   
