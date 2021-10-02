@@ -1,8 +1,6 @@
-// ------- ここから追加する -----------
 <?php
     session_start();
 ?>
-// ------- ここまで追加する -----------
 <!DOCTYPE html>
 <html lang="ja">
     <?php
