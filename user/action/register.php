@@ -1,15 +1,11 @@
 <?php
-// ------- ここから追加する -----------
     session_start();
     require '../../common/validation.php';
-// ------- ここまで追加する -----------
     require '../../common/database.php';
-
-    // パラメータ取得
+    //  パ ラメータ取得
     $user_name = $_POST['user_name'];
     $user_email = $_POST['user_email'];
     $user_password = $_POST['user_password'];
-// ------- ここから追加する -----------
     // バリデーション
     $_SESSION['errors'] = [];
 
@@ -18,7 +14,7 @@
     emptyCheck($_SESSION['errors'], $user_email, "メールアドレスを入力してください。");
     emptyCheck($_SESSION['errors'], $user_password, "パスワードを入力してください。");
 
-    // - 文字数チェック
+    // - 文字数チ　ェック
     stringMaxSizeCheck($_SESSION['errors'], $user_name, "ユーザー名は255文字以内で入力してください。");
     stringMaxSizeCheck($_SESSION['errors'], $user_email, "メールアドレスは255文字以内で入力してください。");
     stringMaxSizeCheck($_SESSION['errors'], $user_password, "パスワードは255文字以内で入力してください。");
@@ -41,12 +37,10 @@
         header('Location: ../../user/');
         exit;
     }
-// ------- ここまで追加する -----------
 
     // DB接続処理
     $database_handler = getDatabaseConnection();
 
-    // --------- ここから追加する ------------
     try {
         // インサートSQLを作成して実行
         if ($statement = $database_handler->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)')) {
@@ -65,4 +59,3 @@
     // メモ投稿画面にリダイレクト
     header('Location: ../../memo/');
     exit;
-    // --------- ここまで追加する ------------

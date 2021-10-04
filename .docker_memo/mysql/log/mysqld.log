@@ -137,3 +137,5 @@ Version: '5.7.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Communi
 2021-10-02T12:43:34.717851Z 0 [Note] mysqld: ready for connections.
 Version: '5.7.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
 2021-10-02T13:26:24.361295Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 212370ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-10-03T06:12:54.945683Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 15958ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2021-10-03T10:30:16.585535Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4832ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
