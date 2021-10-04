@@ -14,7 +14,7 @@
     emptyCheck($_SESSION['errors'], $user_email, "メールアドレスを入力してください。");
     emptyCheck($_SESSION['errors'], $user_password, "パスワードを入力してください。");
 
-    // - 文字数チ　ェック
+    // - 文字数チェック
     stringMaxSizeCheck($_SESSION['errors'], $user_name, "ユーザー名は255文字以内で入力してください。");
     stringMaxSizeCheck($_SESSION['errors'], $user_email, "メールアドレスは255文字以内で入力してください。");
     stringMaxSizeCheck($_SESSION['errors'], $user_password, "パスワードは255文字以内で入力してください。");
@@ -50,6 +50,12 @@
             $statement->bindParam(':email', $user_email);
             $statement->bindParam(':password', $password);
             $statement->execute();
+         // ユーザー情報保持
+          $_SESSION['user'] = [
+          'name' => $user_name,
+          'id' => $database_handler->lastInsertId()
+          ];
+            
         }
     } catch (Throwable $e) {
         echo $e->getMessage();
