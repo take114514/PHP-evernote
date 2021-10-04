@@ -10,7 +10,7 @@
        // バリデーション
        $_SESSION['errors'] = [];
     
-       // - 空チェック
+       // - 空チ　ェック
        emptyCheck($_SESSION['errors'], $user_email, "メールアドレスを入力してください。");
        emptyCheck($_SESSION['errors'], $user_password, "パスワードを入力してください。");
        
@@ -31,3 +31,4 @@
            header('Location: ../../login/');
            exit;
        }
+       

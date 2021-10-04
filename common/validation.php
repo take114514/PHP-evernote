@@ -58,7 +58,7 @@ function halfAlphanumericCheck(&$errors, $check_value, $message) {
     }
 }
 /**
- * メールアドレス重複チェック
+ * メールアドレス重　複チェック
  * @param $errors
  * @param $check_value
  * @param $message
