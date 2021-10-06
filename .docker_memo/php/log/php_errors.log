@@ -61,3 +61,5 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/html/memo/index.php on line 10
+[06-Oct-2021 13:11:23 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[06-Oct-2021 13:11:23 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 21
