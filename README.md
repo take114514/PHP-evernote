@@ -2,6 +2,7 @@
 ![image](https://user-images.githubusercontent.com/90116145/139619782-3ecdb0fe-53e3-418c-9141-68bbaf374df0.png)
 
 
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/90116145/139628251-17e94484-3585-4bc6-8d1a-3b313a75dc4b.png">
 
 ## それぞれのディレクトリについての説明
 
