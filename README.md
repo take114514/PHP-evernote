@@ -5,6 +5,8 @@
 
 <img width="830" alt="image" src="https://user-images.githubusercontent.com/90116145/139628251-17e94484-3585-4bc6-8d1a-3b313a75dc4b.png">
 
+PHPを使用してメモアプリを作成しました。
+
 ## それぞれのディレクトリについての説明
 
 ### common 
